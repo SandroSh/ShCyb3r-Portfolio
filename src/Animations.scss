@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+.container {
+  margin-left: 20px;
+  color: #e5e5e5;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+      0 0 3px rgba(255, 255, 255, 0.3);
+
+    .hand_class {
+      transform-origin: bottom center;
+      animation: wave 5s infinite;
+      display: inline-block;
+    }
+  }
+}
+
+.animation {
+  height: 45px;
+  overflow: hidden;
+  margin-left: 1rem;
+  margin-top: 10px;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 4s infinite;
+}
+
+.first div {
+  background-color: #20a7d8;
+}
+.second div {
+  background-color: #cd921e;
+}
+.third div {
+  background-color: #c10528;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.2rem;
+  }
+  30% {
+    margin-top: -5.2rem;
+  }
+  40% {
+    margin-top: -10.5rem;
+  }
+  60% {
+    margin-top: -10.5rem;
+  }
+  70% {
+    margin-top: -5.2rem;
+  }
+  80% {
+    margin-top: -5.2rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  80% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 825px) {
+  .container {
+    font-size: 1.2em;
+  }
+  .animation {
+    height: 30px !important;
+  }
+}
+@media (max-width: 425px) {
+  .animation {
+    height: 40px !important;
+  }
+  @keyframes text-animation {
+    0% {
+      margin-top: 0;
+    }
+    10% {
+      margin-top: 0;
+    }
+    20% {
+      margin-top: -3.1rem;
+    }
+    30% {
+      margin-top: -3.1rem;
+    }
+    40% {
+      margin-top: -7rem;
+    }
+    60% {
+      margin-top: -7.3rem;
+    }
+    70% {
+      margin-top: -3.1rem;
+    }
+    80% {
+      margin-top: -3.1rem;
+    }
+    90% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+}
