@@ -73,7 +73,7 @@ body {
         font-size: 30px;
         font-weight: 900;
         position: absolute;
-        visibility: hidden;
+        display: none;
         z-index: 11;
 
         .text_div {
@@ -103,7 +103,7 @@ body {
         min-height: 65vh;
         z-index: 10;
         .info {
-          visibility: visible;
+          display: flex;
         }
       }
     }
@@ -141,7 +141,8 @@ body {
       }
     }
 
-    .download_div {
+    a {text-decoration: none;
+      .download_div {
       margin: 20px 50px 0 0;
       display: flex;
       justify-content: space-evenly;
@@ -149,21 +150,24 @@ body {
       h3 {
         margin-right: 40px;
       }
-      a {
-        .button {
-          width: 190px;
-          padding: 0;
-          border: none;
-          transform: rotate(5deg);
-          transform-origin: center;
-          text-decoration: none;
-          font-size: 25px;
-          cursor: pointer;
-          padding-bottom: 3px;
-          border-radius: 5px;
-          box-shadow: 0 2px 0 #494a4b;
-          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          background-color: #cd921e;
+
+      .button {
+        width: 190px;
+        padding: 0;
+        border: none;
+        transform: rotate(5deg);
+        transform-origin: center;
+        text-decoration: none;
+        font-size: 25px;
+        cursor: pointer;
+        padding-bottom: 3px;
+        border-radius: 5px;
+        box-shadow: 0 2px 0 #494a4b;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        background-color: #cd921e;
+        
+          
+          color: #cd921e;
           span {
             background: #f1f5f8;
             display: block;
@@ -189,18 +193,16 @@ body {
     justify-content: space-between;
     align-items: center;
     left: 1rem;
-    
   }
-.scroll-down-div {
-      position: absolute;
-      right: 1rem;
-      bottom: 1.1rem;
-      h3 {
-        
-        margin-right: 18px;
-        animation:messageAnimation 1s infinite;
-      }
+  .scroll-down-div {
+    position: absolute;
+    right: 1rem;
+    bottom: 1.1rem;
+    h3 {
+      margin-right: 18px;
+      animation: messageAnimation 1s infinite;
     }
+  }
   header {
     bottom: 1rem;
     left: 0;
@@ -253,10 +255,11 @@ body {
 }
 
 @media (max-width: 825px) {
+  a {
   .download_div {
     margin-right: 10px !important;
     margin-left: 10px !important;
-    a {
+    
       button {
         width: 100px !important;
         font-size: 15px !important;
@@ -265,7 +268,6 @@ body {
   }
 
   header {
-    
     .icons_div {
       margin-top: 0 !important;
       a {
@@ -295,5 +297,46 @@ body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .external {
+    perspective: 0;
+    img {
+      max-width: 70vh;
+    }
+    .horizontal-scroll-wrapper {
+      margin-top: 20px;
+      width: 180% !important;
+      height: 80vh;
+      overflow-x: scroll !important;
+      padding-bottom: 0 !important;
+
+      .img-wrapper {
+        transform: rotate(90deg) scale(0.5) !important;
+        margin: 50px 0;
+        &:hover {
+          transform: rotate(90deg) scale(0 0.2) !important;
+        }
+        &:first-child {
+          margin-top: 180px !important;
+        }
+        &:last-child {
+          margin-bottom: 150px !important;
+        }
+      }
+    }
+
+    .slower {
+      transform: rotate(90deg) scale(1.1) !important;
+    }
+    .slower1 {
+      transform: rotate(90deg) scale(1.1) !important;
+    }
+
+    .vertical {
+      transform: scale(1.1) !important;
+    }
   }
 }

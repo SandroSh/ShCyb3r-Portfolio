@@ -81,8 +81,6 @@ const Gallery = () => {
   ];
   const [hoveredElement, setHoveredElement] = useState(null);
 
-  
-
   return (
     <div className="external">
       <div className="title_div">
@@ -103,13 +101,13 @@ const Gallery = () => {
           </section>
         </main>
 
-        <div className="download_div">
-          <a href={Resume} download={"Sandro Shubitidze.pdf"}>
+        <a href={Resume} download={"Sandro Shubitidze.pdf"}>
+          <div className="download_div">
             <button className="button">
               <span>Download Resume</span>
             </button>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
 
       {/* Projects Block */}
@@ -179,8 +177,13 @@ const Gallery = () => {
           </div>
         </header>
       </div>
+
       <div className="scroll-down-div">
-        <h3> Try Scroll down</h3>
+        {window.innerWidth >= 573 ? (
+          <h3> Try Scrolling down</h3>
+        ) : (
+          <h3> Try Scrolling right</h3>
+        )}
       </div>
     </div>
   );
