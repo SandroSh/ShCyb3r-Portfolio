@@ -3,6 +3,8 @@ import TodoImg from "./Assets/Todo.jpg";
 import JavaTerminalChatImg from "./Assets/TerminalChat.jpg";
 import CalculatorImg from "./Assets/Calculator.jpg";
 import TPCHJavaImg from "./Assets/TPCHJAVA.jpg";
+
+import WeatherForecast from "./Assets/WeatherForecast.jpg";
 import FarmingCompanyImg from "./Assets/FarmingCompany.jpg";
 import RockPaperScissorsImg from "./Assets/RockPaperScissors.jpg";
 import CoverTheTilesImg from "./Assets/CoverTheTiles.jpg";
@@ -15,6 +17,13 @@ import Resume from "./Assets/Sandro Shubitidze.pdf";
 
 const Gallery = () => {
   const data = [
+    {
+      title: "Weather Forecast",
+      usedTechnologies: " React.js, Styled Components",
+      image: WeatherForecast,
+      liveUrl: "https://weather-app-beige-ten-79.vercel.app/",
+      repoUrl: "https://github.com/SandroSh/Weather_APP",
+    },
     {
       title: "Todo Application",
       usedTechnologies: " React.js, Apex.js, SCSS",
