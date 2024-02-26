@@ -308,6 +308,7 @@ body {
     }
     .horizontal-scroll-wrapper {
       margin-top: 20px;
+      margin-left: 100px;
       width: 180% !important;
       height: 80vh;
       overflow-x: scroll !important;
@@ -320,10 +321,10 @@ body {
           transform: rotate(90deg) scale(0 0.2) !important;
         }
         &:first-child {
-          margin-top: 180px !important;
+          margin-top: 80px !important;
         }
         &:last-child {
-          margin-bottom: 150px !important;
+          margin-bottom: 500px !important;
         }
       }
     }
