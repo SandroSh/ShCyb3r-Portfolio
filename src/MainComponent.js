@@ -15,7 +15,7 @@ import LinkedinIcon from "./Assets/linkedin.svg";
 import GithubIcon from "./Assets/github.svg";
 import GmailIcon from "./Assets/gmail.svg";
 import Resume from "./Assets/Sandro Shubitidze.pdf";
-i
+
 
 const Gallery = () => {
   const data = [
