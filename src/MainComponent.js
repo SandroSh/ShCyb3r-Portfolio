@@ -4,7 +4,8 @@ import JavaTerminalChatImg from "./Assets/TerminalChat.jpg";
 import CalculatorImg from "./Assets/Calculator.jpg";
 import TPCHJavaImg from "./Assets/TPCHJAVA.jpg";
 
-import WeatherForecast from "./Assets/WeatherForecast.jpg";
+import WeatherForecastImg from "./Assets/WeatherForecast.jpg";
+import GithubProjectImg from './Assets/GithubApi.jpg'
 import FarmingCompanyImg from "./Assets/FarmingCompany.jpg";
 import RockPaperScissorsImg from "./Assets/RockPaperScissors.jpg";
 import CoverTheTilesImg from "./Assets/CoverTheTiles.jpg";
@@ -14,15 +15,16 @@ import LinkedinIcon from "./Assets/linkedin.svg";
 import GithubIcon from "./Assets/github.svg";
 import GmailIcon from "./Assets/gmail.svg";
 import Resume from "./Assets/Sandro Shubitidze.pdf";
+i
 
 const Gallery = () => {
   const data = [
     {
-      title: "Weather Forecast",
-      usedTechnologies: " React.js, Styled Components",
-      image: WeatherForecast,
-      liveUrl: "https://weather-app-beige-ten-79.vercel.app/",
-      repoUrl: "https://github.com/SandroSh/Weather_APP",
+      title: "Dev Finder",
+      usedTechnologies: " React.js, Styled-Components, Tanstack Query",
+      image: GithubProjectImg,
+      liveUrl: "https://devfinder-ashy-two.vercel.app/",
+      repoUrl: "https://github.com/SandroSh/TrainEffetive_TechTask",
     },
     {
       title: "Todo Application",
@@ -30,6 +32,13 @@ const Gallery = () => {
       image: TodoImg,
       liveUrl: "https://vermillion-mermaid-3676ca.netlify.app/",
       repoUrl: "https://github.com/SandroSh/Todo-App",
+    },
+    {
+      title: "Weather Forecast",
+      usedTechnologies: " React.js, Styled Components",
+      image: WeatherForecastImg,
+      liveUrl: "https://weather-app-beige-ten-79.vercel.app/",
+      repoUrl: "https://github.com/SandroSh/Weather_APP",
     },
     {
       title: "Java Terminal Chat",
