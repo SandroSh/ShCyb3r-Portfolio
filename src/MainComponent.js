@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
-import TodoImg from "./Assets/Todo.jpg";
-import JavaTerminalChatImg from "./Assets/TerminalChat.jpg";
-import CalculatorImg from "./Assets/Calculator.jpg";
-import TPCHJavaImg from "./Assets/TPCHJAVA.jpg";
+import TodoImg from "./Assets/Todo.webp";
+import JavaTerminalChatImg from "./Assets/TerminalChat.webp";
+import CalculatorImg from "./Assets/Calculator.webp";
+import TPCHJavaImg from "./Assets/TPCHJAVA.webp";
 
-import WeatherForecastImg from "./Assets/WeatherForecast.jpg";
-import GithubProjectImg from './Assets/GithubApi.jpg'
-import FarmingCompanyImg from "./Assets/FarmingCompany.jpg";
-import RockPaperScissorsImg from "./Assets/RockPaperScissors.jpg";
-import CoverTheTilesImg from "./Assets/CoverTheTiles.jpg";
-import HungryPenguinImg from "./Assets/HungryPenguin.jpg";
-import OtherJavaProjectsImg from "./Assets/OtherJavaProjects.jpg";
+import WeatherForecastImg from "./Assets/WeatherForecast.webp";
+import GithubProjectImg from './Assets/GithubApi.webp'
+import FarmingCompanyImg from "./Assets/FarmingCompany.webp";
+import RockPaperScissorsImg from "./Assets/RockPaperScissors.webp";
+import CoverTheTilesImg from "./Assets/CoverTheTiles.webp";
+import HungryPenguinImg from "./Assets/HungryPenguin.webp";
+import OtherJavaProjectsImg from "./Assets/OtherJavaProjects.webp";
+import GalleryAppImg from "./Assets/Gallery Unsplash 1.webp";
 import LinkedinIcon from "./Assets/linkedin.svg";
 import GithubIcon from "./Assets/github.svg";
 import GmailIcon from "./Assets/gmail.svg";
-import Resume from "./Assets/Sandro Shubitidze.pdf";
+import Resume from "./Assets/Sandro Shubitidze Resume.pdf";
 
 
 const Gallery = () => {
@@ -32,6 +33,13 @@ const Gallery = () => {
       image: TodoImg,
       liveUrl: "https://vermillion-mermaid-3676ca.netlify.app/",
       repoUrl: "https://github.com/SandroSh/Todo-App",
+    },
+    {
+      title: "Unsplash API",
+      usedTechnologies: " React.js, Styled Components, React Query",
+      image: GalleryAppImg,
+      liveUrl: "https://gallery-application-nine.vercel.app/",
+      repoUrl: "https://github.com/SandroSh/gallery_application",
     },
     {
       title: "Weather Forecast",
