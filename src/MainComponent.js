@@ -15,11 +15,19 @@ import GalleryAppImg from "./Assets/Gallery Unsplash 1.webp";
 import LinkedinIcon from "./Assets/linkedin.svg";
 import GithubIcon from "./Assets/github.svg";
 import GmailIcon from "./Assets/gmail.svg";
+import CountriesImg from './Assets/Countries.webp'
 import Resume from "./Assets/Sandro Shubitidze Resume.pdf";
 
 
 const Gallery = () => {
   const data = [
+    {
+      title: "Voyager",
+      usedTechnologies: " React.js, Redux, Styled-Components, Tanstack Query, Tanstack Router",
+      image: CountriesImg,
+      liveUrl: "https://voyager-swart-ten.vercel.app/",
+      repoUrl: "https://github.com/SandroSh/Voyager",
+    },
     {
       title: "Dev Finder",
       usedTechnologies: " React.js, Styled-Components, Tanstack Query",
