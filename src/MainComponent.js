@@ -16,11 +16,19 @@ import LinkedinIcon from "./Assets/linkedin.svg";
 import GithubIcon from "./Assets/github.svg";
 import GmailIcon from "./Assets/gmail.svg";
 import CountriesImg from './Assets/Countries.webp'
+import ZoomClone from './Assets/zoomClone.webp'
 import Resume from "./Assets/Sandro Shubitidze Resume.pdf";
 
 
 const Gallery = () => {
   const data = [
+    {
+      title: "Zoom Clone",
+      usedTechnologies: " Next.js, Typescript, Tailwind Css, Clerk, Stream, Shadcn UI",
+      image: ZoomClone,
+      liveUrl: "https://zoom-clone-q0d0m0761-sandroshs-projects.vercel.app/sign-in?redirect_url=https%3A%2F%2Fzoom-clone-q0d0m0761-sandroshs-projects.vercel.app%2F",
+      repoUrl: "https://github.com/SandroSh/Zoom-Clone",
+    },
     {
       title: "Voyager",
       usedTechnologies: " React.js, Redux, Styled-Components, Tanstack Query, Tanstack Router",
