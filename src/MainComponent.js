@@ -17,7 +17,8 @@ import GithubIcon from "./Assets/github.svg";
 import GmailIcon from "./Assets/gmail.svg";
 import CountriesImg from './Assets/Countries.webp'
 import ZoomClone from './Assets/zoomClone.webp'
-import Resume from "./Assets/Sandro Shubitidze Resume.pdf";
+import Imaginify from './Assets/ImaginifyPhoto.webp'
+import Resume from "./Assets/Sandro Shubitidze.pdf";
 
 
 const Gallery = () => {
@@ -28,6 +29,13 @@ const Gallery = () => {
       image: ZoomClone,
       liveUrl: "https://zoom-clone-q0d0m0761-sandroshs-projects.vercel.app/sign-in?redirect_url=https%3A%2F%2Fzoom-clone-q0d0m0761-sandroshs-projects.vercel.app%2F",
       repoUrl: "https://github.com/SandroSh/Zoom-Clone",
+    },
+    {
+      title: "Imaginify (AI App)",
+      usedTechnologies: "Next.js, Typescript, MongoDb, Mongoose, Clerk, Cloudinary, Tailwind Css, Shadcn UI",
+      image: Imaginify,
+      liveUrl: "https://imaginify-pi-three.vercel.app/",
+      repoUrl: "https://github.com/SandroSh/Imaginify",
     },
     {
       title: "Voyager",
