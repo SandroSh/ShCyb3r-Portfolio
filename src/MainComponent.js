@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import TodoImg from "./Assets/Todo.webp";
 import JavaTerminalChatImg from "./Assets/TerminalChat.webp";
 import CalculatorImg from "./Assets/Calculator.webp";
@@ -165,7 +165,7 @@ const Gallery = () => {
         {data.map((item, index) => (
           <div
             className={
-              index % 2 == 0 ? "img-wrapper slower1 vertical" : "img-wrapper "
+              index % 2 === 0 ? "img-wrapper slower1 vertical" : "img-wrapper "
             }
             key={index}
           >
@@ -182,16 +182,16 @@ const Gallery = () => {
 
                 {item.liveUrl != null ? (
                   <div className="links">
-                    <a href={item.liveUrl} target="_blank">
+                    <a href={item.liveUrl} target="_blank" rel="noreferrer">
                       Live
                     </a>
-                    <a href={item.repoUrl} target="_blank">
+                    <a href={item.repoUrl} target="_blank" rel="noreferrer">
                       Repo
                     </a>
                   </div>
                 ) : (
                   <div className="links">
-                    <a href={item.repoUrl} target="_blank">
+                    <a href={item.repoUrl} target="_blank" rel="noreferrer">
                       Repo
                     </a>
                   </div>
@@ -211,17 +211,18 @@ const Gallery = () => {
       <div className="headers_div">
         <header>
           <div className="icons_div">
-            <a href="mailto:shubitidzesandro12@gmail.com" target="_blank">
+            <a href="mailto:shubitidzesandro12@gmail.com" target="_blank" rel="noreferrer">
               <img src={GmailIcon} alt="Gmail Icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/sandro-shubitidze-65313421a/"
               target="_blank"
+              rel="noreferrer"
             >
               {" "}
               <img src={LinkedinIcon} alt="Linkedin Icon" />
             </a>
-            <a href="https://github.com/SandroSh" target="_blank">
+            <a href="https://github.com/SandroSh" target="_blank" rel="noreferrer">
               <img src={GithubIcon} alt="Github Icon" />
             </a>
           </div>
